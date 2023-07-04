@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaen contra el Dengue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- navbar -->
+
+	<nav class="navbar navbar-light bg-success">
+		<div class="logo-container">
+			<a href="/" class="navbar-brand">
+			<img src="mosquito.png" class="img-logo">
+			</a>
+		</div>
+		<div class="navbar-items-container">
+			<a href="/" class="nav-link">inicio</a>
+			<a href="/reporte" class="nav-link">casos</a>
+			<a href="/formulario" class="nav-link">hacer test</a>
+		</div>
+	</nav>
+
+    <!-- formulario -->
+
+    <main>
+
+        <form class="formulary" th:action="@{/test}" th:object="${testDto}" method="post">
+
+            <h1 class="formulary__title">¡Reliza el Test y descarta un caso de Dengue!</h1>
+
+            <h3>¿Presenta fiebre de 36 grados a mas?</h3>
+            <select class="formulary__input" th:field="*{fiebre}" id="fiebre">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+
+            <h3>¿Presenta dolor de cabeza?</h3>
+            <select class="formulary__input" th:field="*{dolorCabeza}" id="dolorCabeza">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+
+            <h3>¿Presenta nauseas y/o vomitos?</h3>
+            <select class="formulary__input" th:field="*{nauseasVomitos}" id="nauseasVomitos">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+
+            <h3>¿Presenta dolor de ojos?</h3>
+            <select class="formulary__input" th:field="*{dolorOjos}" id="dolorOjos">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+
+            <h3 for="">¿Presenta Sarpullido?</h3>
+            <select class="formulary__input" th:field="*{sarpullido}" id="sarpullido">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+
+            <h3>¿Presenta dolor de huesos?</h3>
+            <select class="formulary__input" th:field="*{dolorHuesos}" id="dolorHuesos">
+                <option th:value="no" selected>elegir una opcion</option>
+                <option th:value="si">Si</option>
+                <option th:value="no">No</option>
+            </select>
+        
+            <input class="formulary__button" type="submit" value="Hacer Test">
+
+        </form>
+
+    </main>
+    
+</body>
+</html>

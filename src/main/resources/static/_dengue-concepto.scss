@@ -1,0 +1,42 @@
+
+.dengue_concepto {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 3rem;
+
+    &_img {
+        margin: auto;
+        width: 800px;
+    }
+
+    &_texto {
+        margin: auto;
+        width: 800px;
+    }
+
+    &_texto h1 {
+        font-weight: $font-semibold;
+        padding: 0 0 2rem 0;
+    }
+
+    &_extra {
+        padding: 0.5rem;
+    }
+
+    &_extra h3 {
+        font-weight: $font-semibold;
+        padding: 2rem 0;
+    }
+
+    &_img img {
+        border-radius: $border-radius-images;
+        width: 100%;
+        object-fit: cover;
+    }
+}

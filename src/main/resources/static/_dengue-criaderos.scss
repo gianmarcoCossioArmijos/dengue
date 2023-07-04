@@ -1,0 +1,32 @@
+
+.dengue_criaderos {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+    padding: 3rem;
+
+    &_img {
+        width: 800px;
+    }
+
+    &_texto {
+        width: 800px;
+    }
+
+    &_texto h2, h3 {
+        font-weight: $font-semibold;
+        padding: 2rem;
+    }
+
+    &_img img {
+        border-radius: $border-radius-images;
+        width: 100%;
+        object-fit: cover;
+    }
+}

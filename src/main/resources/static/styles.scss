@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'nav';
+@import 'dengue';
+@import 'situacional';
+@import 'formulario';
+@import 'sucess';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-size-body;
+    background: $background-image;
+    color: $font-color-body;
+    font-family: $font-primary;
+
+    background-size: cover;
+}

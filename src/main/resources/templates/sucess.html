@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaen contra el Dengue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- navbar -->
+
+	<nav class="navbar navbar-light bg-success">
+		<div class="logo-container">
+			<a href="/" class="navbar-brand">
+			<img src="mosquito.png" class="img-logo">
+			</a>
+		</div>
+		<div class="navbar-items-container">
+			<a href="/" class="nav-link">inicio</a>
+			<a href="/reporte" class="nav-link">casos</a>
+			<a href="/formulario" class="nav-link">hacer test</a>
+		</div>
+	</nav>
+
+    <!-- formulario -->
+
+    <main>
+
+        <div class="sucess">
+
+            <h1 class="sucess__title">¡Reliza el Test y descarta un caso de Dengue!</h1>
+
+            <h2><span th:text="${resultado}"></span></h2>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

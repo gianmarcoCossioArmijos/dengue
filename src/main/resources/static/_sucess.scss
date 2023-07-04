@@ -1,0 +1,20 @@
+
+.sucess {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    margin: auto;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
+    text-align: center;
+
+    h2 {
+        padding: 3rem;
+        color: $background-color-nav;
+    }
+}

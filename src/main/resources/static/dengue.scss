@@ -1,0 +1,15 @@
+
+@import 'dengue-concepto';
+@import 'dengue-sintomas';
+@import 'dengue-criaderos';
+@import 'dengue-casos';
+
+.dengue {
+    font-weight: $font-regular;
+    font-size: $font-size-body;
+
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

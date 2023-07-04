@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
+
+//FONTS
+$font-size-body: 30px;
+$font-size-nav: 34px;
+$font-color-body: black;
+$font-color-nav: white;
+$font-color-nav-hover: rgb(236, 255, 95);
+$font-primary: 'Maven Pro', sans-serif;
+$font-semibold: 600;
+$font-regular: 400;
+
+//FONDO
+$background-image: url(fondo.jpg) center;
+$background-color-nav: #20b03c;
+$background-color-sala: white;
+$background-color-boton: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+
+//BORDERS
+$border-round-image: 50%;
+$border-radius-sala: 30px;
+$border-radius-images: 30px;
+$border-radius-boton: 10px;
+
+//IMAGENES
+$logo-height: 60px;
+$zona-size: 300px;
+
+//SHADOWS
+$sala-shadow: 0px 0px 15px -3px rgba(0,0,0,0.1);

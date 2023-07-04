@@ -1,0 +1,33 @@
+
+.sala {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    width: 700px;
+    padding: 1.2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'titulo titulo'
+                        'imagen datos';
+
+    &__titulo {
+        grid-area: titulo;
+        padding: 0.5rem 0 1.5rem 0;
+        text-align: center;
+    }
+
+    &__img {
+        grid-area: imagen;
+    }
+
+    &__datos {
+        grid-area: datos;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__datos p{
+        text-align: center;
+    }
+}

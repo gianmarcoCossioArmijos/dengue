@@ -1,0 +1,29 @@
+
+@import 'sala';
+
+.situacional {
+    font-weight: $font-regular;
+
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.situacional img {
+    border-radius: $border-round-image;
+    width: $zona-size;
+    height: $zona-size;
+}
+
+.situacional__title {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    width: 100%;
+    text-align: center;
+    padding:1.5rem 0;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Jaen contra el Dengue</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+	<!-- navbar -->
+
+	<nav class="navbar">
+		<div class="logo-container">
+			<a href="/" class="navbar-brand">
+			<img src="mosquito.png" class="img-logo">
+			</a>
+		</div>
+		<div class="navbar-items-container">
+			<a href="/" class="nav-link">inicio</a>
+			<a href="/reporte" class="nav-link">casos</a>
+			<a href="/formulario" class="nav-link">hacer test</a>
+		</div>
+	</nav>
+	
+	<!-- sala dengue -->
+
+	<section class="situacional">
+	
+		<h1 class="situacional__title">Sala Situacional de Dengue en la ciudad de Jaen</h1>
+	
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Provincia de Jaen</h3>
+			
+			<img alt="sala__img" src="total_mapa.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.casosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.casosTotalesDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.casosTotalesDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.casosTotalesDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.casosTotalesDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Jaen</h3>
+			
+			<img alt="sala__img" src="jaen.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.jaenCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.jaenCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.jaenCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.jaenCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.jaenCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Bellavista</h3>
+			
+			<img alt="sala__img" src="bellavista.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.bellavistaCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.bellavistaCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.bellavistaCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.bellavistaCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.bellavistaCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Huabal</h3>
+			
+			<img alt="sala__img" src="huabal.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.huabalCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.huabalCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.huabalCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.huabalCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.huabalCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de las Pirias</h3>
+			
+			<img alt="sala__img" src="las_pirias.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.lasPiriasCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.lasPiriasCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.lasPiriasCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.lasPiriasCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.lasPiriasCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Santa Rosa</h3>
+			
+			<img alt="sala__img" src="santa_rosa.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.santaRosaCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.santaRosaCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.santaRosaCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.santaRosaCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.santaRosaCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Colasay</h3>
+			
+			<img alt="sala__img" src="colasay.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.colasayCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.colasayCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.colasayCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.colasayCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.colasayCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Pucara</h3>
+			
+			<img alt="sala__img" src="pucara.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.pucaraCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.pucaraCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.pucaraCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.pucaraCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.pucaraCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Pomahuaca</h3>
+			
+			<img alt="sala__img" src="pomahuaca.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.pomahuacaCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.pomahuacaCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.pomahuacaCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.pomahuacaCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.pomahuacaCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de San Jose del Alto</h3>
+			
+			<img alt="sala__img" src="san_jose_del_alto.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.sanJoseDelAltoCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.sanJoseDelAltoCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.sanJoseDelAltoCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.sanJoseDelAltoCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.sanJoseDelAltoCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Chontali</h3>
+			
+			<img alt="sala__img" src="chontali.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total :</h5> <p th:text="${reporte.chontaliCasosTotales}"></p>
+				<h5>Casos graves :</h5> <p th:text="${reporte.chontaliCasosDengueGrave}"></p>
+				<h5>Sin sintomas :</h5> <p th:text="${reporte.chontaliCasosDengueSinSenales}"></p>
+				<h5>Con sintomas :</h5> <p th:text="${reporte.chontaliCasosDengueConSenales}"></p>
+				<h5>Fallecidos :</h5> <p th:text="${reporte.chontaliCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de San Felipe</h3>
+			
+			<img alt="sala__img" src="san_felipe.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.sanFelipeCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.sanFelipeCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.sanFelipeCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.sanFelipeCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.sanFelipeCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+		
+		<div class="sala">
+		
+			<h3 class="sala__titulo">Distrito de Sallique</h3>
+			
+			<img alt="sala__img" src="sallique.png" width="160px" height="160px">
+			
+			<div class="sala__datos">
+				<h5>Total: </h5> <p th:text="${reporte.salliqueCasosTotales}"></p>
+				<h5>Casos graves: </h5> <p th:text="${reporte.salliqueCasosDengueGrave}"></p>
+				<h5>Sin sintomas: </h5> <p th:text="${reporte.salliqueCasosDengueSinSenales}"></p>
+				<h5>Con sintomas: </h5> <p th:text="${reporte.salliqueCasosDengueConSenales}"></p>
+				<h5>Fallecidos: </h5> <p th:text="${reporte.salliqueCasosDengueFallecidos}"></p>
+			</div>
+
+		</div>
+	
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+.dengue_casos {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 3rem;
+
+    &_titulo {
+        text-align: center;
+        font-size: $font-size-nav;
+        font-weight: $font-semibold;
+    }
+
+    &_boton {
+        background: $background-color-boton;
+        border-radius: $border-radius-boton;
+        color: $font-color-nav;
+        font-weight: $font-semibold;
+        font-size: $font-size-nav;
+
+        border: 0;
+        padding: 2rem;
+        width: 100%;
+        text-transform: uppercase;
+    }
+}

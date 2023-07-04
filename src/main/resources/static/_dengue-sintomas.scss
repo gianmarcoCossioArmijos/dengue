@@ -1,0 +1,68 @@
+
+.dengue_sintomas {
+    background-color: $background-color-sala;
+    border-radius: $border-radius-sala;
+    box-shadow: $sala-shadow;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 3rem;
+
+    &_img {
+        margin: auto;
+        max-width: 900px;
+    }
+
+    &_texto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_texto h3 {
+        font-weight: $font-semibold;
+        padding: 3rem 0;
+    }
+
+    &_img img {
+        border-radius: $border-radius-images;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &_test {
+        padding: 5rem 1rem 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_test h4 {
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+
+    &_test button {
+        background: $background-color-boton;
+        border-radius: $border-radius-boton;
+        color: $font-color-nav;
+        font-weight: $font-semibold;
+        font-size: $font-size-nav;
+
+        border: 0;
+        padding: 2rem;
+        width: 100%;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1000px) {
+    .dengue_sintomas {
+        display: flex;
+        flex-direction: column;
+    
+        &_img {
+            margin: auto;
+            max-width: 100%;
+        }
+    }
+}

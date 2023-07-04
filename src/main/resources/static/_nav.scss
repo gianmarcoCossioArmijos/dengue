@@ -1,0 +1,31 @@
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+
+    background-color: $background-color-nav;
+}
+
+.img-logo {
+    height: $logo-height;
+}
+
+.navbar-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+        font-size: $font-size-body;
+        color: $font-color-nav;
+        font-weight: $font-semibold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $font-color-nav-hover;
+    }
+}

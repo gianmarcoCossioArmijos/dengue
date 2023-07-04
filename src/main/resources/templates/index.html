@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Jaen contra el Dengue</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+	<!-- navbar -->
+
+	<nav class="navbar navbar-light bg-success">
+		<div class="logo-container">
+			<a href="/" class="navbar-brand">
+			<img src="mosquito.png" class="img-logo">
+			</a>
+		</div>
+		<div class="navbar-items-container">
+			<a href="/" class="nav-link">inicio</a>
+			<a href="/reporte" class="nav-link">casos</a>
+			<a href="/formulario" class="nav-link">hacer test</a>
+		</div>
+	</nav>
+	
+	<!-- concepto dengue -->
+
+	<main class="dengue">
+
+	<section class="dengue_concepto">
+
+		<div class="dengue_concepto_texto">
+			<h1>¿Qué es el dengue?</h1>
+			<p class="texto_global">Es una enfermedad compleja transmitida
+				por la picadura del zancudo Aedes Aegypti, insecto que también
+				transmite el zika y la chikungunya. Su presencia es muy común en
+				zonas calurosas y tropicales, como en la costa norte y la selva. Si
+				esta enfermedad no es tratada a tiempo puede causarte la muerte o
+				discapacidad; por lo que es importante que, ante cualquier síntoma o
+				sospecha, acudas al establecimiento de salud más cercano para
+				recibir atención inmediata.</p>
+
+		</div>
+
+		<div class="dengue_concepto_img">
+			<img class="dengue_cabecera_img" alt="DENGUE_gobpe"
+				src="dengue.jpg">
+		</div>
+
+		<div class="dengue_concepto_extra">
+
+			<h3>Grupos vulnerables</h3>
+			<p class="texto_global">Son aquellas personas que, por su
+				condición vulnerable, están en mayor riesgo de tener complicaciones
+				graves si contraen esta enfermedad. En este grupo se consideran a:</p>
+
+			<ul>
+				<li>Gestantes</li>
+				<li>Niños</li>
+				<li>Adultos mayores</li>
+				<li>Persona con enfermedades crónicas como: hipertensión,
+					diabetes, entre otras</li>
+			</ul>
+		</div>
+
+	</section>
+	
+	<!-- sintomas dengue -->
+
+	<section class="dengue_sintomas">
+
+		<div class="dengue_sintomas_texto">
+			<h3>Síntomas</h3>
+			<p class="texto_global">La infección por dengue puede ser
+				asintomática; sin embargo, puede tener síntomas como:</p>
+
+			<ul>
+				<li>Fiebre alta</li>
+				<li>Dolor de cabeza</li>
+				<li>Dolor en las articulaciones o músculos</li>
+				<li>Dolor detrás de los ojos</li>
+				<li>Sarpullido</li>
+			</ul>
+
+			<h3>Signos de alarma</h3>
+			<p class="texto_global">En caso de padecer alguno de los
+				siguientes signos de alarma, tu vida puede encontrarse en peligro y
+				podrías necesitar atención inmediata:</p>
+
+			<ul>
+				<li>Dolor abdominal</li>
+				<li>Vómitos persistentes</li>
+				<li>Sangrado de la nariz o encías</li>
+				<li>Vómito persistente con sangre o sangre en las heces</li>
+			</ul>
+
+			<div class="dengue_sintomas_test">
+		
+				<h4>Descarta un caso de dengue!</h4>
+				<a href="/formulario"><button>Hacer test de Dengue</button></a>
+			
+			</div>
+
+		</div>
+
+		<div class="dengue_sintomas_img">
+			<img class="dengue_cabecera_img" alt="DENGUE_gobpe"
+				src="síntomas.png">
+		</div>
+
+	</section>
+	
+	<!-- criaderos dengue -->
+	
+	<section class="dengue_criaderos">
+
+		<div class="dengue_criaderos_texto">
+			<h2>Dengue: qué son los criaderos</h2>
+			<p class="texto_global">Son los recipientes u objetos con agua acumulada (tanques, tinas, 
+			bidones, llantas, botellas, macetas, floreros, canaletas, bebederos de animales, etc.) 
+			donde se reproduce el zancudo que transmite el dengue.</p>
+
+			<h3>Para eliminar los criaderos de tu hogar</h3>
+			<ul>
+				<li>Escobilla, lava y tapa bien todos los recipientes donde almacenas agua</li>
+				<li>Elimina, voltea o cubre los objetos que no utilices y puedan almacenar agua</li>
+				<li>Permite que el personal de salud coloque el producto larvicida para eliminar 
+				las larvas del zancudo en tus recipientes donde almacenas agua</li>
+			</ul>
+		</div>
+
+		<div class="dengue_criaderos_img">
+			<img class="dengue_cabecera_img" alt="DENGUE_gobpe"
+				src="criaderos.png">
+		</div>
+			
+		<div class="dengue_criaderos_texto">
+			<h3>Para mantener tu casa libre de criaderos</h3>
+			<ul>
+				<li>Utiliza floreros con arena húmeda y evita el exceso de agua</li>
+				<li>Si tienes macetero, limpia el sumidero todos los días que riegues</li>
+				<li>Si tienes plantas acuáticas, cambia de agua todos los días, lava los tallos y las raíces</li>
+				<li>Cambia el agua de los bebederos de los animales y límpialos todos los días</li>
+				<li>Realiza actividades de ordenamiento y limpieza de tu domicilio y sus alrededores</li>
+			</ul>
+		</div>
+		
+		<div class="dengue_criaderos_img">
+			<img class="dengue_cabecera_img" alt="DENGUE_gobpe"
+				src="pasos.png">
+		</div>
+
+	</section>
+	
+	<section class="dengue_casos">
+		
+		<h2 class="dengue_casos_titulo">Casos de dengue en la Ciudad de Jaen</h2>
+		<a href="/reporte"><button class="dengue_casos_boton">Ver sala situacional</button></a>
+	
+	</section>
+
+</main>
+
+</body>
+</html>
