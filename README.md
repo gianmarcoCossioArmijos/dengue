@@ -3,15 +3,13 @@
 Web MVC que reporta casos de dengue en la provincia de jaen, y reliza tests
 de descarte por sintamas de dengue. Utlizando una conexion a base de datos MySQL
 y querys nativos con Hibernate para relizar la consulta a la base de datos.
-Para esta aplicacion web se ha utilizado. Spring Web, MySQL, Hibernate, SaSS,
-Thymeleaf y Springboot.
+Para esta aplicacion web se ha utilizado. Spring Web, MySQL, SaSS, Thymeleaf y Springboot.
 
 ### Tecnologias usadas
 
 <div id="technologies" align="center">
    <img src="https://www.foc.es/wp-content/uploads/2020/09/Java-Logo.png" height="70"/>
    <img src="https://stackjava.com/wp-content/uploads/2017/12/spring-logo.png" height="70"/>
-   <img src="http://198.211.104.161/wp-content/uploads/2014/01/Hibernate-logo.png" height="70"/>
    <img src="https://pipedream.com/s.v0/app_1YMhwo/logo/orig" height="70"/>
    <img src="https://niixer.com/wp-content/uploads/2020/11/spring-boot.png" height="70"/>
    <img src="https://www.tech-wd.com/wd/wp-content/uploads/2011/01/HTML5_Badge_256.png" height="70"/>
